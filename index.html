@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Persona JSON Mapper</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Persona JSON Mapper</h1>
+
+        <form id="persona-form">
+            <h2>Persona</h2>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label for="persona-name">Persona Name</label>
+                        <input type="text" class="form-control" id="persona-name">
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-level">Level</label>
+                        <input type="number" class="form-control" id="persona-level">
+                    </div>
+                    <div class="col-xs-2">
+                        <label for="persona-arcana">Arcana</label>
+                        <select class="form-control" id="persona-arcana">
+                            <option value="Fool">Fool</option>
+                            <option value="Magician">Magician</option>
+                            <option value="Priestess">Priestess</option>
+                            <option value="Empress">Empress</option>
+                            <option value="Emperor">Emperor</option>
+                            <option value="Hierophant">Hierophant</option>
+                            <option value="Lovers">Lovers</option>
+                            <option value="Chariot">Chariot</option>
+                            <option value="Justice">Justice</option>
+                            <option value="Hermit">Hermit</option>
+                            <option value="Fortune">Fortune</option>
+                            <option value="Strength">Strength</option>
+                            <option value="Hanged Man">Hanged Man</option>
+                            <option value="Death">Death</option>
+                            <option value="Temperance">Temperance</option>
+                            <option value="Devil">Devil</option>
+                            <option value="Tower">Tower</option>
+                            <option value="Star">Star</option>
+                            <option value="Moon">Moon</option>
+                            <option value="Sun">Sun</option>
+                            <option value="Judgement">Judgement</option>
+                            <option value="Aeon">Aeon</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <label for="persona-strength">Strength</label>
+                        <input type="number" class="form-control" id="persona-strength">
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-magic">Magic</label>
+                        <input type="number" class="form-control" id="persona-magic">
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-endurance">Endurance</label>
+                        <input type="number" class="form-control" id="persona-endurance">
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-agility">Agility</label>
+                        <input type="number" class="form-control" id="persona-agility">
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-luck">Luck</label>
+                        <input type="number" class="form-control" id="persona-luck">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <label for="persona-elem-slash">Slash</label>
+                        <select class="form-control" id="persona-elem-slash">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-strike">Strike</label>
+                        <select class="form-control" id="persona-elem-strike">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-pierce">Pierce</label>
+                        <select class="form-control" id="persona-elem-pierce">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-fire">Fire</label>
+                        <select class="form-control" id="persona-elem-fire">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-ice">Ice</label>
+                        <select class="form-control" id="persona-elem-ice">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-elec">Elec</label>
+                        <select class="form-control" id="persona-elem-elec">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-wind">Wind</label>
+                        <select class="form-control" id="persona-elem-wind">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-light">Light</label>
+                        <select class="form-control" id="persona-elem-light">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <label for="persona-elem-dark">Dark</label>
+                        <select class="form-control" id="persona-elem-dark">
+                            <option value="-">-</option>
+                            <option value="Wk">Wk</option>
+                            <option value="Str">Str</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rpl">Rpl</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2>Skills</h2>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label for="persona-skill-name">Skill Name</label>
+                        <input type="text" class="form-control" id="persona-skill-name">
+                    </div>
+                    <div class="col-xs-2">
+                        <label for="persona-skill-level-learned">Level Learned</label>
+                        <input type="number" class="form-control" id="persona-skill-level-learned">
+                    </div>
+                    <div class="col-xs-1">
+                        <button id="add-skill-button" class="btn btn-primary">Add Skill</button>
+                    </div>
+                </div>
+            </div>
+            <div id="skill-list">
+
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <button id="add-persona-button" type="submit" class="btn btn-success">Add Persona to List</button>
+                </div>
+                <div class="col-xs-2">
+                    <a href="#" download="data.json" id="export-personas-button" type="submit" class="btn btn-warning">Export All Personas</a>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        <div id="persona-list">
+            <p>Personas on Buffer:</p>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
