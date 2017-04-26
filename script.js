@@ -4,6 +4,7 @@ var exportPersonasButton = document.querySelector("#export-personas-button");
 
 var list_persona_json = {}
 
+
 var current_persona_json = {};
 
 resetCurrentPersona();
